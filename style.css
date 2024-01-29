@@ -1,0 +1,246 @@
+/* reset code and common code starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+html {
+    background-color: #fafafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+
+    /* .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      } */
+
+
+}
+
+body {
+    background-color: #fafafafa;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* reset code and common code ends here */
+
+
+/* banner section starts here  */
+#blog-banner-section {
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#blog-banner-section article {
+    flex-basis: 80%;
+    margin: 1rem;
+}
+
+#blog-banner-section aside {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.accordion {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid;
+    color: black;
+    background-color: #DDDDDD;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.accordion-title:hover {
+    background-color: yellow;
+}
+
+.accordion-content {
+    background: lightgoldenrodyellow;
+    display: none;
+    padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.order {
+    width: 45rem;
+    height: 45rem;
+    border: 0.3rem solid;
+    margin-left: 20px;
+}
+
+.order-heading {
+    background-color: green;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    color: #fff;
+    justify-content: flex-start;
+
+
+}
+
+/* banner section ends here  */
+
+
+/* .card-btn {
+    align-self: center;
+    width: 80%;
+} */
+
+.btn {
+    background-color: #DDDDDD;
+    color: green;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-transform: uppercase;
+
+}
+
+.btn:focus {
+    background-color: green;
+    color: #fff;
+}
+
+.accordion-content>p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.order-body>p {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/* responsive starts here */
+@media (max-width: 992px) {
+
+    #blog-banner-section {
+        flex-direction: column;
+    }
+
+    #blog-banner-section article {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .accordion {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .order {
+        width: 60rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    #blog-banner-section article {
+        width: 80%;
+
+    }
+
+    #blog-banner-section aside {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+
+    }
+
+    .accordion {
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .order {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 15px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    #blog-banner-section article {
+        width: 80%;
+
+    }
+
+    #blog-banner-section aside {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .accordion {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .order {
+        width: 44rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* responsive ends here */
