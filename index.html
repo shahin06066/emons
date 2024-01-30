@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Website</title>
+    <title>Order page</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
 
@@ -36,52 +36,28 @@
 </head>
 
 <body>
-
-    <!-- header starts here -->
-
-    <!-- <header id="blog-header">
-        <figure class="logo-figure">
-            <i class="fa-solid fa-robot logo"></i>
-        </figure>
-        <nav aria-level="Main Menu">
-            <ul role="menubar">
-                <li role="none"><a href="#" class="nav-link" role="menuitem">Home</a></li>
-
-                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
-
-                <li role="none"><a href="#" class="nav-link" role="menuitem">Archives</a></li>
-
-                <li role="none"><a href="#" class="nav-link" role="menuitem">Blog Posts</a></li>
-
-                <li role="none"><a href="#" class="nav-link" role="menuitem">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
-
-    <!-- header ends here -->
-
     <!-- main section starts here -->
     <main>
 
         <!-- banner section starts here -->
-        <section id="blog-banner-section">
+        <section id="container">
             <article>
                 <div class="accordion">
                     <div class="accordion-item">
                         <div class="accordion-title">PRE STARTERS</div>
                         <div class="accordion-content">
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
-                            <p>Spicy Papadum £0.75 <button class="btn">Add Item</button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
+                            <p>Spicy Papadum £0.75 <button class="btn">Add </button></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -341,9 +317,100 @@
                     </div>
                 </div>
 
+                <div class="collection-panel">
+                    <div class="checkout-step-1">
+                        <h2>Checkout Step 1 <br><br></h2>
+                    </div>
+                    <div class="collection-body">
+
+                        <label for="item"></label>
+                        <select name="product" id="product">
+                            <option value="SELECTION COLLECTION/DELEVARY">SELECTION COLLECTION/DELEVARY</option>
+                            <option value="COLLECTION">COLLECTION</option>
+                            <option value="DELEVERY">DELEVERY</option>
+                            <option value="OTHERS">OTHERS</option>
+                        </select>
+                        <br>
+                        <br>
+
+                        Collection <br>
+                        Sun to Thu: Min 25 Minutes <br>
+                        Fri, Sat: Min 45 Minutes
+                        <br>
+                        <br>
+                        Delivery <br>
+                        Sun to Thu: Min 45 Minutes <br>
+                        Fri,Sat: Min 60 Minutes
+                    </div>
+                </div>
+
+                <div class="collection-panel">
+                    <div class="checkout-step-1">
+                        <h2>Checkout Step 2 <br><br></h2>
+                    </div>
+                    <div style="height: auto;" class="collection-body">
+
+                        <label for="item"></label>
+                        <select name="product" id="product">
+                            <option value="SELECT PAYMENT METHOD">SELECT PAYMENT METHOD</option>
+                            <option value="CASH">CASH</option>
+                            <option value="CARD">CARD</option>
+                        </select>
+                        <br><br>
+                        <img src="https://www.nanosoft.co.uk/secure_pay.png" alt="">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="collection-panel">
+                    <div class="checkout-step-1">
+                        <h2>Checkout Step 3 <br><br></h2>
+                    </div>
+                    <div style="background-color: #DDDDDD;" class="collection-body">
+                        <div class="headingforinoutdiv">Your Details</div>
+                        <br>
+                        <br>
+                        <div class="input-style">
+                            <input class="input-hero" style="font-size: large; width: 100%; padding: 5px;"
+                                placeholder="Email" type="email"> <br>
+                            <input class="input-hero" style="font-size: large; width: 100%; padding: 5px;"
+                                placeholder="Name" type="text"> <br>
+                            <input class="input-hero" style="font-size: large; width: 100%; padding: 5px;"
+                                placeholder="Number" type="number"> <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="collection-panel">
+                    <div style="background-color: #DDDDDD; height: auto;" class="collection-body">
+
+                        <img src="https://www.mintleafhitchin.co.uk/images/allergy-advice.jpg" alt="">
+                        <br>
+                        <p style="color: black;"> If you
+                            have a food
+                            allergy or intolerance
+                            (or someone you're ordering
+                            for has), phone the
+                            restaurant takeaway on before placing your order.</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="collection-panel">
+                    <div class="checkout-step-1">
+                        <h2>Checkout Step 4 <br><br></h2>
+                    </div>
+                    <div style="height: auto;" class="collection-body">
+
+
+                    </div>
+                </div>
+
             </aside>
         </section>
-        <!-- banner section ends here -->
+
 
     </main>
     <!-- main section ends here -->
